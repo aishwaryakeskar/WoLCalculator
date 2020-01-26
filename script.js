@@ -68,3 +68,16 @@ equalSign.addEventListener("click",() => {
     calculate()
     updateScreen(currentInput)
 })
+
+const clearButton = document.querySelector(".all-clear");
+
+const clearAll = () => {
+    prevInput = '0'
+    calculationOperator = ''
+    currentInput = '0'
+}
+
+clearButton.addEventListener("click", () => {
+    clearAll()
+    updateScreen(currentInput)
+})
